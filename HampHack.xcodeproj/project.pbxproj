@@ -7,12 +7,25 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0AC1C6262762E44056363B29 /* Pods_HampHack.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B6E435D920C2E19071693AE /* Pods_HampHack.framework */; };
 		223B55F41E6A41AF00CC3A64 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 223B55F31E6A41AF00CC3A64 /* AppDelegate.swift */; };
 		223B55F61E6A41AF00CC3A64 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 223B55F51E6A41AF00CC3A64 /* FirstViewController.swift */; };
 		223B55F81E6A41AF00CC3A64 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 223B55F71E6A41AF00CC3A64 /* SecondViewController.swift */; };
 		223B55FB1E6A41AF00CC3A64 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 223B55F91E6A41AF00CC3A64 /* Main.storyboard */; };
 		223B55FD1E6A41AF00CC3A64 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 223B55FC1E6A41AF00CC3A64 /* Assets.xcassets */; };
 		223B56001E6A41AF00CC3A64 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 223B55FE1E6A41AF00CC3A64 /* LaunchScreen.storyboard */; };
+		223B56081E6A41F600CC3A64 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 223B56071E6A41F600CC3A64 /* GoogleService-Info.plist */; };
+		223B560A1E6A469900CC3A64 /* ThirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 223B56091E6A469900CC3A64 /* ThirdViewController.swift */; };
+		223B560E1E6A7CF800CC3A64 /* FeedTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 223B560D1E6A7CF800CC3A64 /* FeedTableViewCell.swift */; };
+		223B56101E6A800A00CC3A64 /* fb.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 223B560F1E6A800A00CC3A64 /* fb.jpg */; };
+		223B56121E6A804700CC3A64 /* googl.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 223B56111E6A804700CC3A64 /* googl.jpg */; };
+		223B56141E6A806E00CC3A64 /* twitter.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 223B56131E6A806E00CC3A64 /* twitter.jpg */; };
+		223B56161E6A808000CC3A64 /* youtube1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 223B56151E6A808000CC3A64 /* youtube1.jpg */; };
+		223B56181E6A82A900CC3A64 /* hh_logo_bckgrnd.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 223B56171E6A82A900CC3A64 /* hh_logo_bckgrnd.jpg */; };
+		223B561B1E6F0A5D00CC3A64 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 223B56191E6F0A5D00CC3A64 /* Model.xcdatamodeld */; };
+		2291B6B81E74FD3400BB5AE8 /* Authentication.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2291B6B71E74FD3400BB5AE8 /* Authentication.swift */; };
+		2291B6BC1E759C6B00BB5AE8 /* Organizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2291B6BB1E759C6B00BB5AE8 /* Organizer.swift */; };
+		2291B6BE1E75A4F700BB5AE8 /* Scan.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2291B6BD1E75A4F700BB5AE8 /* Scan.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +37,21 @@
 		223B55FC1E6A41AF00CC3A64 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		223B55FF1E6A41AF00CC3A64 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		223B56011E6A41AF00CC3A64 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		223B56071E6A41F600CC3A64 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		223B56091E6A469900CC3A64 /* ThirdViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThirdViewController.swift; sourceTree = "<group>"; };
+		223B560D1E6A7CF800CC3A64 /* FeedTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedTableViewCell.swift; sourceTree = "<group>"; };
+		223B560F1E6A800A00CC3A64 /* fb.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = fb.jpg; sourceTree = "<group>"; };
+		223B56111E6A804700CC3A64 /* googl.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = googl.jpg; sourceTree = "<group>"; };
+		223B56131E6A806E00CC3A64 /* twitter.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = twitter.jpg; sourceTree = "<group>"; };
+		223B56151E6A808000CC3A64 /* youtube1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = youtube1.jpg; sourceTree = "<group>"; };
+		223B56171E6A82A900CC3A64 /* hh_logo_bckgrnd.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = hh_logo_bckgrnd.jpg; sourceTree = "<group>"; };
+		223B561A1E6F0A5D00CC3A64 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
+		2291B6B71E74FD3400BB5AE8 /* Authentication.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Authentication.swift; sourceTree = "<group>"; };
+		2291B6BB1E759C6B00BB5AE8 /* Organizer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Organizer.swift; sourceTree = "<group>"; };
+		2291B6BD1E75A4F700BB5AE8 /* Scan.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Scan.swift; sourceTree = "<group>"; };
+		987D981B5C0E0E22BDBC58FA /* Pods-HampHack.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HampHack.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HampHack/Pods-HampHack.debug.xcconfig"; sourceTree = "<group>"; };
+		9B6E435D920C2E19071693AE /* Pods_HampHack.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HampHack.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F2F691B6AE337115A3FA9A4F /* Pods-HampHack.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HampHack.release.xcconfig"; path = "Pods/Target Support Files/Pods-HampHack/Pods-HampHack.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +59,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0AC1C6262762E44056363B29 /* Pods_HampHack.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +71,8 @@
 			children = (
 				223B55F21E6A41AF00CC3A64 /* HampHack */,
 				223B55F11E6A41AF00CC3A64 /* Products */,
+				88A853155C73AC47225FDFD6 /* Pods */,
+				FDBB19151E31463F58E11D22 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -59,12 +90,41 @@
 				223B55F31E6A41AF00CC3A64 /* AppDelegate.swift */,
 				223B55F51E6A41AF00CC3A64 /* FirstViewController.swift */,
 				223B55F71E6A41AF00CC3A64 /* SecondViewController.swift */,
+				223B56091E6A469900CC3A64 /* ThirdViewController.swift */,
 				223B55F91E6A41AF00CC3A64 /* Main.storyboard */,
+				2291B6BD1E75A4F700BB5AE8 /* Scan.swift */,
+				2291B6BB1E759C6B00BB5AE8 /* Organizer.swift */,
+				2291B6B71E74FD3400BB5AE8 /* Authentication.swift */,
+				223B560D1E6A7CF800CC3A64 /* FeedTableViewCell.swift */,
 				223B55FC1E6A41AF00CC3A64 /* Assets.xcassets */,
 				223B55FE1E6A41AF00CC3A64 /* LaunchScreen.storyboard */,
 				223B56011E6A41AF00CC3A64 /* Info.plist */,
+				223B56071E6A41F600CC3A64 /* GoogleService-Info.plist */,
+				223B56111E6A804700CC3A64 /* googl.jpg */,
+				223B56131E6A806E00CC3A64 /* twitter.jpg */,
+				223B56151E6A808000CC3A64 /* youtube1.jpg */,
+				223B560F1E6A800A00CC3A64 /* fb.jpg */,
+				223B56171E6A82A900CC3A64 /* hh_logo_bckgrnd.jpg */,
+				223B56191E6F0A5D00CC3A64 /* Model.xcdatamodeld */,
 			);
 			path = HampHack;
+			sourceTree = "<group>";
+		};
+		88A853155C73AC47225FDFD6 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				987D981B5C0E0E22BDBC58FA /* Pods-HampHack.debug.xcconfig */,
+				F2F691B6AE337115A3FA9A4F /* Pods-HampHack.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		FDBB19151E31463F58E11D22 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9B6E435D920C2E19071693AE /* Pods_HampHack.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +134,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 223B56041E6A41AF00CC3A64 /* Build configuration list for PBXNativeTarget "HampHack" */;
 			buildPhases = (
+				8B57BB066660D410FB46F875 /* [CP] Check Pods Manifest.lock */,
 				223B55EC1E6A41AF00CC3A64 /* Sources */,
 				223B55ED1E6A41AF00CC3A64 /* Frameworks */,
 				223B55EE1E6A41AF00CC3A64 /* Resources */,
+				83BB5F62FCCEEDAC0F6A06B3 /* [CP] Embed Pods Frameworks */,
+				A462268BE649FFE66D666894 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -99,6 +162,7 @@
 				TargetAttributes = {
 					223B55EF1E6A41AF00CC3A64 = {
 						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = WM632VJLE6;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -126,7 +190,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				223B56181E6A82A900CC3A64 /* hh_logo_bckgrnd.jpg in Resources */,
+				223B56141E6A806E00CC3A64 /* twitter.jpg in Resources */,
+				223B56161E6A808000CC3A64 /* youtube1.jpg in Resources */,
+				223B56121E6A804700CC3A64 /* googl.jpg in Resources */,
+				223B56101E6A800A00CC3A64 /* fb.jpg in Resources */,
 				223B56001E6A41AF00CC3A64 /* LaunchScreen.storyboard in Resources */,
+				223B56081E6A41F600CC3A64 /* GoogleService-Info.plist in Resources */,
 				223B55FD1E6A41AF00CC3A64 /* Assets.xcassets in Resources */,
 				223B55FB1E6A41AF00CC3A64 /* Main.storyboard in Resources */,
 			);
@@ -134,14 +204,68 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		83BB5F62FCCEEDAC0F6A06B3 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HampHack/Pods-HampHack-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8B57BB066660D410FB46F875 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		A462268BE649FFE66D666894 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HampHack/Pods-HampHack-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		223B55EC1E6A41AF00CC3A64 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2291B6B81E74FD3400BB5AE8 /* Authentication.swift in Sources */,
 				223B55F81E6A41AF00CC3A64 /* SecondViewController.swift in Sources */,
+				2291B6BE1E75A4F700BB5AE8 /* Scan.swift in Sources */,
 				223B55F41E6A41AF00CC3A64 /* AppDelegate.swift in Sources */,
+				2291B6BC1E759C6B00BB5AE8 /* Organizer.swift in Sources */,
+				223B560A1E6A469900CC3A64 /* ThirdViewController.swift in Sources */,
 				223B55F61E6A41AF00CC3A64 /* FirstViewController.swift in Sources */,
+				223B560E1E6A7CF800CC3A64 /* FeedTableViewCell.swift in Sources */,
+				223B561B1E6F0A5D00CC3A64 /* Model.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -260,8 +384,10 @@
 		};
 		223B56051E6A41AF00CC3A64 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 987D981B5C0E0E22BDBC58FA /* Pods-HampHack.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = WM632VJLE6;
 				INFOPLIST_FILE = HampHack/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.Tapojit.HampHack;
@@ -272,8 +398,10 @@
 		};
 		223B56061E6A41AF00CC3A64 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F2F691B6AE337115A3FA9A4F /* Pods-HampHack.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = WM632VJLE6;
 				INFOPLIST_FILE = HampHack/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.Tapojit.HampHack;
@@ -301,8 +429,22 @@
 				223B56061E6A41AF00CC3A64 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		223B56191E6F0A5D00CC3A64 /* Model.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				223B561A1E6F0A5D00CC3A64 /* Model.xcdatamodel */,
+			);
+			currentVersion = 223B561A1E6F0A5D00CC3A64 /* Model.xcdatamodel */;
+			path = Model.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 223B55E81E6A41AF00CC3A64 /* Project object */;
 }
