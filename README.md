@@ -18,8 +18,8 @@ Successful authentication opens a new view controller. Here, organizers can post
 Qrcode scanner is accessible from this view controller upon pressing camera button. Swift file: Scan.swift.
 
 # Other Features:
-**Notifications: **
-Push notifications sent using **OneSignal** based on changes to Firebase Database. Changes are detected using a node.js server script named **server.js**. 
+**Notifications:**
+ Push notifications sent using **OneSignal** based on changes to Firebase Database. Changes are detected using a node.js server script named **server.js**. 
 
 
 # Important-Excluded Files and links:
