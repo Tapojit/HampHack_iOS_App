@@ -1,5 +1,5 @@
 # HampHack_iOS_App
-This is an iOS app dedicated to the event HampHack, a yearly hackathon event in Hampshire College. Backend database and authentication (For event organizers only) is implemented in Firebase.
+This is an iOS app dedicated to the event HampHack, a yearly hackathon event in Hampshire College. Backend database and authentication (For event organizers only) is implemented in Firebase. App is available in App Store. Link: https://itunes.apple.com/us/app/hamp-hack-2017/id1222384071?ls=1&mt=8
 
 # View Controllers
 **Feeds-** Contains social media news for event and will display important announcements during the event. Feeds are clickable and will take user to social media posts in an UIWebView. Push notifications activated for both. A timer counts down to the event's start. Another timer will start at the beginning of the event until it is over. Swift file: FirstViewController.swift
@@ -16,6 +16,11 @@ An UIWebView intent to HampHack Website. Swift file: ThirdViewController.swift
 Successful authentication opens a new view controller. Here, organizers can post new announcements and feeds. Swift file: Organizers.swift.
 
 Qrcode scanner is accessible from this view controller upon pressing camera button. Swift file: Scan.swift.
+
+# Other Features:
+**Notifications**
+Push notifications sent using **OneSignal** based on changes to Firebase Database. Changes are detected using a node.js server script named server.js. 
+
 
 # Important-Excluded Files and links:
 For security issues, **google-services.plist** has been excluded.
