@@ -9,7 +9,10 @@
 import UIKit
 import FirebaseDatabase
 
-class Organizer: UIViewController {
+class Organizer: UIViewController, UITextFieldDelegate {
+    @IBAction func cancel(_ sender: UIBarButtonItem) {
+        changeVC()
+    }
     
     var ref:FIRDatabaseReference?
 
@@ -18,6 +21,7 @@ class Organizer: UIViewController {
     @IBOutlet weak var feedTF: UITextField!
     
     @IBOutlet weak var urlTF: UITextField!
+    @IBOutlet weak var emoji: UITextField!
     
     @IBOutlet weak var imgTF: UITextField!
     
@@ -36,12 +40,23 @@ class Organizer: UIViewController {
         ref=FIRDatabase.database().reference()
 
 
-        if(!(announcementsTF.text==""))
+        if(!(announcementsTF.text=="") && !(emoji.text==""))
         {
-            self.ref?.child("HampHack").child("Announcements").setValue(announcementsTF.text)
-            announcementsTF.text=""
-        }
+            if ((announcementsTF.text?.characters.count)!>40)
+            {
+                alertDialog(title: "Warning!", text: "Number of characters has exceeded limit of 40")
+            }
+            else
+            {
+                self.ref?.child("HampHack").child("Announcements").setValue(announcementsTF.text)
+                announcementsTF.text=""
+                
+                self.ref?.child("HampHack").child("Emoji").setValue(emoji.text)
+                emoji.text=""
+            }
             
+            
+        }
         if(!(feedTF.text=="") && !(urlTF.text=="") && !(imgTF.text==""))
         {
             ref?.child("HampHack").child("Feeds").observeSingleEvent(of: .value, with: { (snapshot) in
@@ -65,8 +80,8 @@ class Organizer: UIViewController {
         
     }
     
-    @IBAction func unwindToHomeScreen(segue: UIStoryboardSegue) {
-        dismiss(animated: true, completion: nil)
+    @IBAction func unwindToOrganizer(segue: UIStoryboardSegue) {
+        
     }
     
     func alertDialog(title: String, text: String)
@@ -79,6 +94,23 @@ class Organizer: UIViewController {
         
         self.present(alert, animated: true, completion: nil)
     }
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        textField.resignFirstResponder()
+        return true
+    }
+    
+    func changeVC() -> Void {
+        let storyBoard : UIStoryboard = UIStoryboard(name: "Main", bundle:nil)
+        
+        let nextViewController = storyBoard.instantiateViewController(withIdentifier: "Tab")
+        self.present(nextViewController, animated:true, completion:nil)
+    }
+    
+
+    
+    
+    
+    
     
 
     /*

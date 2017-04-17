@@ -11,4 +11,5 @@ target 'HampHack' do
   pod ‘Firebase/Database’
   pod ‘Firebase/Auth’
   pod ‘QRCode’
+  pod ‘OneSignal’
 end

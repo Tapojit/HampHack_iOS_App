@@ -19,15 +19,19 @@ class SecondViewController: UIViewController, UITableViewDelegate, UITableViewDa
     var ref: FIRDatabaseReference?
     var databaseHandler: FIRDatabaseHandle?
     
-    let ticketsL=["Registration", "Ticket1", "Ticket2", "Ticket3", "Ticket4"]
+    let ticketsL=["Registration",
+                  "Idea Jam (6:45pm)",
+                  "Pitch your product idea (7:15pm)",
+                  "Virtual Reality Games for beginners (7:15pm)",
+                  "Quick and dirty prototype 101 (7:15pm)",
+                  "Viacom workshop (7:45pm)",
+                  "Design Thinking (7:45pm)",
+                  "Introduction to 3D printing (7:45pm)",
+                  "Intro to Docker, app making (8:15pm)",
+                  "Introduction to 3D Scanning (8:15pm)",
+                  "Controlling things using mind waves (8:15pm)"]
     
-    override var supportedInterfaceOrientations: UIInterfaceOrientationMask {
-        return UIInterfaceOrientationMask.portrait
-    }
     
-    override var shouldAutorotate: Bool{
-        return false
-    }
    
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -43,6 +47,11 @@ class SecondViewController: UIViewController, UITableViewDelegate, UITableViewDa
     }
     
     
+    override var shouldAutorotate: Bool{
+        return false
+    }
+    
+    
     public func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int
     {
         return (ticketsL.count)
@@ -53,8 +62,32 @@ class SecondViewController: UIViewController, UITableViewDelegate, UITableViewDa
     {
         let cell=UITableViewCell(style: UITableViewCellStyle.default, reuseIdentifier: "ticketCell")
         cell.textLabel?.text=ticketsL[indexPath.row]
+        cell.textLabel?.font=UIFont(descriptor: cell.textLabel!.font.fontDescriptor, size: 12)
         return cell
     }
+    
+    
+    func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
+    }
+    func tableView(_ tableView: UITableView, editActionsForRowAt indexPath: IndexPath) -> [UITableViewRowAction]? {
+        let rename=UITableViewRowAction(style: .normal, title: "Rename") { (action, index) in
+            let appDelegate=UIApplication.shared.delegate as! AppDelegate
+            let context=appDelegate.persistentContainer.viewContext
+            if indexPath.row==0
+            {
+                self.alTF(title: "Hey There!", text: "Please enter the full name you registered with", entity: "RegisTicket", context: context)
+                self.tickets.reloadRows(at: [indexPath], with: UITableViewRowAnimation.automatic)
+            }
+
+        }
+        rename.backgroundColor=UIColor.blue
+        
+        return [rename]
+        
+    }
+    
+    
+    
     
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
@@ -87,6 +120,33 @@ class SecondViewController: UIViewController, UITableViewDelegate, UITableViewDa
             {
                 imgLoader(img: "ticket4", entity: "TicketFinal", context: context, ind: 4)
             }
+            else if pos==5
+            {
+                imgLoader(img: "ticket5", entity: "TicketFinal", context: context, ind: 5)
+            }
+            else if pos==6
+            {
+                imgLoader(img: "ticket6", entity: "TicketFinal", context: context, ind: 6)
+            }
+            
+            else if pos==7
+            {
+                imgLoader(img: "ticket7", entity: "TicketFinal", context: context, ind: 7)
+            }
+                
+            else if pos==8
+            {
+                imgLoader(img: "ticket8", entity: "TicketFinal", context: context, ind: 8)
+            }
+                
+            else if pos==9
+            {
+                imgLoader(img: "ticket9", entity: "TicketFinal", context: context, ind: 9)
+            }
+            else if pos==10
+            {
+                imgLoader(img: "ticket10", entity: "TicketFinal", context: context, ind: 10)
+            }
             
             else if pos==0
             {
@@ -108,7 +168,7 @@ class SecondViewController: UIViewController, UITableViewDelegate, UITableViewDa
                         }
                     }
                     else{
-                        alTF(title: "ALERT", text: "Enter your registered name", entity: "RegisTicket", context: context)
+                        alTF(title: "Hey There!", text: "Please enter the full name you registered with", entity: "RegisTicket", context: context)
                     }
                 }
                 catch{
@@ -200,7 +260,7 @@ class SecondViewController: UIViewController, UITableViewDelegate, UITableViewDa
             
 
             
-            ref?.child("HampHack").child("QR").child(ticketsL[ind]).observeSingleEvent(of: .value, with: { (snapshot) in
+            ref?.child("HampHack").child("QR").child(img).observeSingleEvent(of: .value, with: { (snapshot) in
                 let valString=snapshot.value as? Int ?? 0
                 var value=Int(valString)
                 
@@ -223,7 +283,7 @@ class SecondViewController: UIViewController, UITableViewDelegate, UITableViewDa
                     self.alertDialog(title: "Warning!", text: "Sorry, no tickets available")
                 }
                 
-                self.ref?.child("HampHack").child("QR").child(self.ticketsL[ind]).setValue(value)
+                self.ref?.child("HampHack").child("QR").child(img).setValue(value)
                 
                 
                 
@@ -315,6 +375,11 @@ class SecondViewController: UIViewController, UITableViewDelegate, UITableViewDa
         let needsConnection = (flags.rawValue & UInt32(kSCNetworkFlagsConnectionRequired)) != 0
         return (isReachable && !needsConnection)
     }
+    
+    
+        
+    
+    
 }
 
 

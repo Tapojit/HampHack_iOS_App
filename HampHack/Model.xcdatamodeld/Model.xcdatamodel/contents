@@ -1,5 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="11759" systemVersion="16D32" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="12141" systemVersion="16D32" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="Notif" representedClassName="Notif" syncable="YES" codeGenerationType="class">
+        <attribute name="announ" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="feeds" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
     <entity name="RegisTicket" representedClassName="RegisTicket" syncable="YES" codeGenerationType="class">
         <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
     </entity>
@@ -8,6 +12,12 @@
         <attribute name="ticket2" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
         <attribute name="ticket3" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
         <attribute name="ticket4" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="ticket5" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="ticket6" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="ticket7" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="ticket8" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="ticket9" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="ticket10" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
     </entity>
     <entity name="Ticketimg" representedClassName="Ticketimg" syncable="YES" codeGenerationType="class">
         <attribute name="ticket1" optional="YES" attributeType="Binary" allowsExternalBinaryDataStorage="YES" syncable="YES"/>
@@ -16,8 +26,9 @@
         <attribute name="ticket4" optional="YES" attributeType="Binary" allowsExternalBinaryDataStorage="YES" syncable="YES"/>
     </entity>
     <elements>
-        <element name="Ticketimg" positionX="-63" positionY="-18" width="128" height="105"/>
-        <element name="TicketFinal" positionX="-63" positionY="9" width="128" height="105"/>
         <element name="RegisTicket" positionX="-54" positionY="36" width="128" height="60"/>
+        <element name="TicketFinal" positionX="-63" positionY="9" width="128" height="195"/>
+        <element name="Ticketimg" positionX="-63" positionY="-18" width="128" height="105"/>
+        <element name="Notif" positionX="-45" positionY="81" width="128" height="75"/>
     </elements>
 </model>

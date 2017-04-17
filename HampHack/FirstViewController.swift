@@ -13,8 +13,7 @@ import Foundation
 import SystemConfiguration
 class FirstViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
-    @IBOutlet weak var timerLabel: UILabel!
-    @IBOutlet weak var countDown: UILabel!
+
     let formatter=DateFormatter()
     
     let userCalendar=Calendar.current
@@ -25,10 +24,16 @@ class FirstViewController: UIViewController, UITableViewDelegate, UITableViewDat
     Calendar.Component.minute,
     Calendar.Component.second
     ]
+
+    @IBOutlet weak var day: UILabel!
     
+    @IBOutlet weak var hr: UILabel!
     
+    @IBOutlet weak var min: UILabel!
     
+    @IBOutlet weak var sec: UILabel!
     
+    @IBOutlet weak var emoji: UIImageView!
     
     
     
@@ -53,6 +58,8 @@ class FirstViewController: UIViewController, UITableViewDelegate, UITableViewDat
     var key3=[Int]()
     var databaseHandler3: FIRDatabaseHandle?
     
+    var emojiHandler: FIRDatabaseHandle?
+    
     var ref: FIRDatabaseReference?
     
     var databaseHandler: FIRDatabaseHandle?
@@ -60,15 +67,22 @@ class FirstViewController: UIViewController, UITableViewDelegate, UITableViewDat
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        
+        
+        
+        
+        
         NotificationCenter.default.addObserver(self, selector: #selector(viewDidAppear(_:)), name: NSNotification.Name.UIApplicationWillEnterForeground, object: nil)
         
         
-        UNUserNotificationCenter.current().requestAuthorization(options: [.alert, .sound, .badge], completionHandler: {didAllow, error in})
+        
         
         
         let timer = Timer.scheduledTimer(timeInterval: 1.0, target: self, selector: #selector(timePrinter), userInfo: nil, repeats: true)
         
         timer.fire()
+        
+        
         
         if !isInternetAvailable()
         {
@@ -87,19 +101,16 @@ class FirstViewController: UIViewController, UITableViewDelegate, UITableViewDat
             if self.posData.count==0{
                 self.posData.insert((snapshot.value as? String)!, at: 0)
                 self.key1.insert(Int(snapshot.key)!, at: 0)
-                self.pushNoti(info: (snapshot.value as? String)!, title: "Feeds")
             }
             else {
                 let key = Int(snapshot.key)!
                 if key<self.key1[0]{
                     self.posData.insert((snapshot.value as? String)!, at: 0)
                     self.key1.insert(Int(snapshot.key)!, at: 0)
-                    self.pushNoti(info: (snapshot.value as? String)!, title: "Feeds")
                 }
                 else{
                     self.posData.append((snapshot.value as? String)!)
                     self.key1.append(Int(snapshot.key)!)
-                    self.pushNoti(info: (snapshot.value as? String)!, title: "Feeds")
                 }
                 
             }
@@ -160,7 +171,84 @@ class FirstViewController: UIViewController, UITableViewDelegate, UITableViewDat
             self.Feed.reloadData()
             self.animate()
         })
+        
+        
+        
+        
+        
+        
+        
         databaseHandlerA = ref?.child("HampHack").child("Announcements").observe(.value, with: { (snapshot) in
+            
+            self.emojiHandler=self.ref?.child("HampHack").child("Emoji").observe(.value, with: { (snapshot2) in
+                let b=snapshot2.value as? String
+                
+                if(b=="cool")
+                {
+                    self.emoji.image=UIImage(named: "cool"+".jpg")
+                }
+                
+                if(b=="drink")
+                {
+                    self.emoji.image=UIImage(named: "drink"+".jpg")
+                }
+                
+                if(b=="eyes")
+                {
+                    self.emoji.image=UIImage(named: "eyes"+".jpg")
+                }
+                
+                if(b=="headph")
+                {
+                    self.emoji.image=UIImage(named: "headph"+".jpg")
+                }
+                if(b=="nerd")
+                {
+                    self.emoji.image=UIImage(named: "nerd"+".jpg")
+                }
+                
+                if(b=="noodles")
+                {
+                    self.emoji.image=UIImage(named: "noodles"+".jpg")
+                }
+                
+                if(b=="owl")
+                {
+                    self.emoji.image=UIImage(named: "owl"+".jpg")
+                }
+                
+                if(b=="pizza")
+                {
+                    self.emoji.image=UIImage(named: "pizza"+".jpg")
+                }
+                
+                if(b=="prize")
+                {
+                    self.emoji.image=UIImage(named: "prize"+".jpg")
+                }
+                
+                if(b=="rocket")
+                {
+                    self.emoji.image=UIImage(named: "rocket"+".jpg")
+                }
+                
+                if(b=="sleep")
+                {
+                    self.emoji.image=UIImage(named: "sleep"+".jpg")
+                }
+                
+                if(b=="taco")
+                {
+                    self.emoji.image=UIImage(named: "taco"+".jpg")
+                }
+                
+                if(b=="time")
+                {
+                    self.emoji.image=UIImage(named: "time"+".jpg")
+                }
+                
+            })
+            
             
             let b=snapshot.value as? String
             
@@ -172,7 +260,7 @@ class FirstViewController: UIViewController, UITableViewDelegate, UITableViewDat
             else {
                 self.announ=b!
                 self.animLabel?.textColor=UIColor.red
-                self.pushNoti(info: b!, title: "Announcements")
+
             }
             self.animLabel?.text=self.announ
             self.Feed.reloadData()
@@ -182,6 +270,8 @@ class FirstViewController: UIViewController, UITableViewDelegate, UITableViewDat
         self.animate()
         
     }
+    
+    
     
     
     func timeCalculator(dateFormat: String, endTime: String, startTime: Date = Date()) -> DateComponents {
@@ -195,27 +285,46 @@ class FirstViewController: UIViewController, UITableViewDelegate, UITableViewDat
     }
     
     func timePrinter() -> Void {
-        let time = timeCalculator(dateFormat: "MM/dd/yyyy hh:mm:ss a", endTime: "4/14/2017 6:00:00 p")
-        if (Date()>formatter.date(from: "4/15/2017 6:00:00 p")!){
-            countDown.text="EVENT OVER!"
-            countDown.textColor=UIColor.red
+        let time = timeCalculator(dateFormat: "MM/dd/yyyy hh:mm:ss a", endTime: "4/14/2017 6:30:00 p")
+        if (Date()>formatter.date(from: "4/15/2017 6:30:00 p")!){
+            day.text="OVER!"
+            hr.text="OVER!"
+            min.text="OVER!"
+            sec.text="OVER!"
+            day.textColor=UIColor.red
+            hr.textColor=UIColor.red
+            min.textColor=UIColor.red
+            sec.textColor=UIColor.red
         }
-        else if (Date()>formatter.date(from: "4/14/2017 6:00:00 p")!){
-            let time2=timeCalculator(dateFormat: "MM/dd/yyyy hh:mm:ss a", endTime: "4/15/2017 6:00:00 p")
-            countDown.text = "\(time2.day!) Days \(time2.minute!) Minutes \(time2.second!) Seconds"
-            countDown.textColor=UIColor.green
-            timerLabel.text="Hacking time remaining:"
+        else if (Date()>formatter.date(from: "4/14/2017 6:30:00 p")!){
+            let time2=timeCalculator(dateFormat: "MM/dd/yyyy hh:mm:ss a", endTime: "4/15/2017 6:30:00 p")
+            day.text="\(time2.day!)"
+            hr.text="\(time2.hour!)"
+            min.text="\(time2.minute!)"
+            sec.text="\(time2.second!)"
+            
+            day.textColor=UIColor.green
+            hr.textColor=UIColor.green
+            min.textColor=UIColor.green
+            sec.textColor=UIColor.green
         }
 
         
         else {
             
-            countDown.text = "\(time.day!) Days \(time.minute!) Minutes \(time.second!) Seconds"
+            day.text="\(time.day!)"
+            hr.text="\(time.hour!)"
+            min.text="\(time.minute!)"
+            sec.text="\(time.second!)"
         }
     }
     
+    
+    
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(true)
+        
+        UIApplication.shared.applicationIconBadgeNumber = 0
         databaseHandlerA = ref?.child("HampHack").child("Announcements").observe(.value, with: { (snapshot) in
             
             let b=snapshot.value as? String
@@ -228,7 +337,6 @@ class FirstViewController: UIViewController, UITableViewDelegate, UITableViewDat
             else {
                 self.announ=b!
                 self.animLabel?.textColor=UIColor.red
-                self.pushNoti(info: b!, title: "Announcements")
             }
             self.animLabel?.text=self.announ
             self.Feed.reloadData()
@@ -283,6 +391,10 @@ class FirstViewController: UIViewController, UITableViewDelegate, UITableViewDat
             {
                 cell.FeedImage.image=UIImage(named: "googl"+".jpg")
             }
+            if img[indexPath.row]=="inst"
+            {
+                cell.FeedImage.image=UIImage(named: "Instagram"+".jpg")
+            }
         }
 
 
@@ -306,16 +418,6 @@ class FirstViewController: UIViewController, UITableViewDelegate, UITableViewDat
     }
     
     
-    func pushNoti(info: String, title: String) -> Void {
-        let content=UNMutableNotificationContent()
-        content.title=title
-        content.body=info
-        content.badge=1
-        
-        let trigger=UNTimeIntervalNotificationTrigger(timeInterval: 3, repeats: false)
-        let request=UNNotificationRequest(identifier: "Sent", content: content, trigger: trigger)
-        UNUserNotificationCenter.current().add(request, withCompletionHandler: nil)
-    }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if let d22=segue.destination as? ThirdViewController{
@@ -356,7 +458,11 @@ class FirstViewController: UIViewController, UITableViewDelegate, UITableViewDat
         
         self.present(alert, animated: true, completion: nil)
     }
-
-
+    
+    @IBAction func unwindToFirst(segue: UIStoryboardSegue) {
+        dismiss(animated: true, completion: nil)
+    }
+    
+    
 }
 

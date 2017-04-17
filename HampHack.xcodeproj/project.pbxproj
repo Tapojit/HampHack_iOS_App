@@ -23,12 +23,53 @@
 		223B56161E6A808000CC3A64 /* youtube1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 223B56151E6A808000CC3A64 /* youtube1.jpg */; };
 		223B56181E6A82A900CC3A64 /* hh_logo_bckgrnd.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 223B56171E6A82A900CC3A64 /* hh_logo_bckgrnd.jpg */; };
 		223B561B1E6F0A5D00CC3A64 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 223B56191E6F0A5D00CC3A64 /* Model.xcdatamodeld */; };
+		226CB93E1E8F55FD008FF6E5 /* Instagram.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 226CB93D1E8F55FD008FF6E5 /* Instagram.jpg */; };
+		226CB9421E8F65B6008FF6E5 /* cool.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 226CB9411E8F65B6008FF6E5 /* cool.jpg */; };
+		226CB9441E8F85AF008FF6E5 /* drink.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 226CB9431E8F85AF008FF6E5 /* drink.jpg */; };
+		226CB9501E8F85BF008FF6E5 /* eyes.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 226CB9451E8F85BF008FF6E5 /* eyes.jpg */; };
+		226CB9511E8F85BF008FF6E5 /* headph.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 226CB9461E8F85BF008FF6E5 /* headph.jpg */; };
+		226CB9521E8F85BF008FF6E5 /* nerd.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 226CB9471E8F85BF008FF6E5 /* nerd.jpg */; };
+		226CB9531E8F85BF008FF6E5 /* noodles.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 226CB9481E8F85BF008FF6E5 /* noodles.jpg */; };
+		226CB9541E8F85BF008FF6E5 /* owl.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 226CB9491E8F85BF008FF6E5 /* owl.jpg */; };
+		226CB9551E8F85BF008FF6E5 /* pizza.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 226CB94A1E8F85BF008FF6E5 /* pizza.jpg */; };
+		226CB9561E8F85BF008FF6E5 /* prize.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 226CB94B1E8F85BF008FF6E5 /* prize.jpg */; };
+		226CB9571E8F85BF008FF6E5 /* rocket.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 226CB94C1E8F85BF008FF6E5 /* rocket.jpg */; };
+		226CB9581E8F85BF008FF6E5 /* sleep.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 226CB94D1E8F85BF008FF6E5 /* sleep.jpg */; };
+		226CB9591E8F85BF008FF6E5 /* taco.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 226CB94E1E8F85BF008FF6E5 /* taco.jpg */; };
+		226CB95A1E8F85BF008FF6E5 /* time.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 226CB94F1E8F85BF008FF6E5 /* time.jpg */; };
 		2291B6B81E74FD3400BB5AE8 /* Authentication.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2291B6B71E74FD3400BB5AE8 /* Authentication.swift */; };
 		2291B6BC1E759C6B00BB5AE8 /* Organizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2291B6BB1E759C6B00BB5AE8 /* Organizer.swift */; };
 		2291B6BE1E75A4F700BB5AE8 /* Scan.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2291B6BD1E75A4F700BB5AE8 /* Scan.swift */; };
+		22E1F14A1EA515B900D723B5 /* NotificationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22E1F1491EA515B900D723B5 /* NotificationService.swift */; };
+		22E1F14E1EA515B900D723B5 /* OneSignalNotificationServiceExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 22E1F1471EA515B900D723B5 /* OneSignalNotificationServiceExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		22E1F14C1EA515B900D723B5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 223B55E81E6A41AF00CC3A64 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 22E1F1461EA515B900D723B5;
+			remoteInfo = OneSignalNotificationServiceExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		22E1F1521EA515B900D723B5 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				22E1F14E1EA515B900D723B5 /* OneSignalNotificationServiceExtension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		01125A011E90E11A00752F28 /* HampHack.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = HampHack.entitlements; sourceTree = "<group>"; };
 		223B55F01E6A41AF00CC3A64 /* HampHack.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HampHack.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		223B55F31E6A41AF00CC3A64 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		223B55F51E6A41AF00CC3A64 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
@@ -46,9 +87,26 @@
 		223B56151E6A808000CC3A64 /* youtube1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = youtube1.jpg; sourceTree = "<group>"; };
 		223B56171E6A82A900CC3A64 /* hh_logo_bckgrnd.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = hh_logo_bckgrnd.jpg; sourceTree = "<group>"; };
 		223B561A1E6F0A5D00CC3A64 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
+		226CB93D1E8F55FD008FF6E5 /* Instagram.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Instagram.jpg; sourceTree = "<group>"; };
+		226CB9411E8F65B6008FF6E5 /* cool.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = cool.jpg; sourceTree = "<group>"; };
+		226CB9431E8F85AF008FF6E5 /* drink.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = drink.jpg; sourceTree = "<group>"; };
+		226CB9451E8F85BF008FF6E5 /* eyes.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = eyes.jpg; sourceTree = "<group>"; };
+		226CB9461E8F85BF008FF6E5 /* headph.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = headph.jpg; sourceTree = "<group>"; };
+		226CB9471E8F85BF008FF6E5 /* nerd.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = nerd.jpg; sourceTree = "<group>"; };
+		226CB9481E8F85BF008FF6E5 /* noodles.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = noodles.jpg; sourceTree = "<group>"; };
+		226CB9491E8F85BF008FF6E5 /* owl.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = owl.jpg; sourceTree = "<group>"; };
+		226CB94A1E8F85BF008FF6E5 /* pizza.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = pizza.jpg; sourceTree = "<group>"; };
+		226CB94B1E8F85BF008FF6E5 /* prize.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = prize.jpg; sourceTree = "<group>"; };
+		226CB94C1E8F85BF008FF6E5 /* rocket.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = rocket.jpg; sourceTree = "<group>"; };
+		226CB94D1E8F85BF008FF6E5 /* sleep.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = sleep.jpg; sourceTree = "<group>"; };
+		226CB94E1E8F85BF008FF6E5 /* taco.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = taco.jpg; sourceTree = "<group>"; };
+		226CB94F1E8F85BF008FF6E5 /* time.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = time.jpg; sourceTree = "<group>"; };
 		2291B6B71E74FD3400BB5AE8 /* Authentication.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Authentication.swift; sourceTree = "<group>"; };
 		2291B6BB1E759C6B00BB5AE8 /* Organizer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Organizer.swift; sourceTree = "<group>"; };
 		2291B6BD1E75A4F700BB5AE8 /* Scan.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Scan.swift; sourceTree = "<group>"; };
+		22E1F1471EA515B900D723B5 /* OneSignalNotificationServiceExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = OneSignalNotificationServiceExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		22E1F1491EA515B900D723B5 /* NotificationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationService.swift; sourceTree = "<group>"; };
+		22E1F14B1EA515B900D723B5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		987D981B5C0E0E22BDBC58FA /* Pods-HampHack.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HampHack.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HampHack/Pods-HampHack.debug.xcconfig"; sourceTree = "<group>"; };
 		9B6E435D920C2E19071693AE /* Pods_HampHack.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HampHack.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F2F691B6AE337115A3FA9A4F /* Pods-HampHack.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HampHack.release.xcconfig"; path = "Pods/Target Support Files/Pods-HampHack/Pods-HampHack.release.xcconfig"; sourceTree = "<group>"; };
@@ -63,6 +121,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		22E1F1441EA515B900D723B5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -70,6 +135,7 @@
 			isa = PBXGroup;
 			children = (
 				223B55F21E6A41AF00CC3A64 /* HampHack */,
+				22E1F1481EA515B900D723B5 /* OneSignalNotificationServiceExtension */,
 				223B55F11E6A41AF00CC3A64 /* Products */,
 				88A853155C73AC47225FDFD6 /* Pods */,
 				FDBB19151E31463F58E11D22 /* Frameworks */,
@@ -80,6 +146,7 @@
 			isa = PBXGroup;
 			children = (
 				223B55F01E6A41AF00CC3A64 /* HampHack.app */,
+				22E1F1471EA515B900D723B5 /* OneSignalNotificationServiceExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -87,6 +154,7 @@
 		223B55F21E6A41AF00CC3A64 /* HampHack */ = {
 			isa = PBXGroup;
 			children = (
+				01125A011E90E11A00752F28 /* HampHack.entitlements */,
 				223B55F31E6A41AF00CC3A64 /* AppDelegate.swift */,
 				223B55F51E6A41AF00CC3A64 /* FirstViewController.swift */,
 				223B55F71E6A41AF00CC3A64 /* SecondViewController.swift */,
@@ -101,13 +169,36 @@
 				223B56011E6A41AF00CC3A64 /* Info.plist */,
 				223B56071E6A41F600CC3A64 /* GoogleService-Info.plist */,
 				223B56111E6A804700CC3A64 /* googl.jpg */,
+				226CB9411E8F65B6008FF6E5 /* cool.jpg */,
+				226CB9451E8F85BF008FF6E5 /* eyes.jpg */,
+				226CB9461E8F85BF008FF6E5 /* headph.jpg */,
+				226CB9471E8F85BF008FF6E5 /* nerd.jpg */,
+				226CB9481E8F85BF008FF6E5 /* noodles.jpg */,
+				226CB9491E8F85BF008FF6E5 /* owl.jpg */,
+				226CB94A1E8F85BF008FF6E5 /* pizza.jpg */,
+				226CB94B1E8F85BF008FF6E5 /* prize.jpg */,
+				226CB94C1E8F85BF008FF6E5 /* rocket.jpg */,
+				226CB94D1E8F85BF008FF6E5 /* sleep.jpg */,
+				226CB94E1E8F85BF008FF6E5 /* taco.jpg */,
+				226CB94F1E8F85BF008FF6E5 /* time.jpg */,
 				223B56131E6A806E00CC3A64 /* twitter.jpg */,
+				226CB9431E8F85AF008FF6E5 /* drink.jpg */,
+				226CB93D1E8F55FD008FF6E5 /* Instagram.jpg */,
 				223B56151E6A808000CC3A64 /* youtube1.jpg */,
 				223B560F1E6A800A00CC3A64 /* fb.jpg */,
 				223B56171E6A82A900CC3A64 /* hh_logo_bckgrnd.jpg */,
 				223B56191E6F0A5D00CC3A64 /* Model.xcdatamodeld */,
 			);
 			path = HampHack;
+			sourceTree = "<group>";
+		};
+		22E1F1481EA515B900D723B5 /* OneSignalNotificationServiceExtension */ = {
+			isa = PBXGroup;
+			children = (
+				22E1F1491EA515B900D723B5 /* NotificationService.swift */,
+				22E1F14B1EA515B900D723B5 /* Info.plist */,
+			);
+			path = OneSignalNotificationServiceExtension;
 			sourceTree = "<group>";
 		};
 		88A853155C73AC47225FDFD6 /* Pods */ = {
@@ -140,15 +231,34 @@
 				223B55EE1E6A41AF00CC3A64 /* Resources */,
 				83BB5F62FCCEEDAC0F6A06B3 /* [CP] Embed Pods Frameworks */,
 				A462268BE649FFE66D666894 /* [CP] Copy Pods Resources */,
+				22E1F1521EA515B900D723B5 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				22E1F14D1EA515B900D723B5 /* PBXTargetDependency */,
 			);
 			name = HampHack;
 			productName = HampHack;
 			productReference = 223B55F01E6A41AF00CC3A64 /* HampHack.app */;
 			productType = "com.apple.product-type.application";
+		};
+		22E1F1461EA515B900D723B5 /* OneSignalNotificationServiceExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 22E1F1511EA515B900D723B5 /* Build configuration list for PBXNativeTarget "OneSignalNotificationServiceExtension" */;
+			buildPhases = (
+				22E1F1431EA515B900D723B5 /* Sources */,
+				22E1F1441EA515B900D723B5 /* Frameworks */,
+				22E1F1451EA515B900D723B5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = OneSignalNotificationServiceExtension;
+			productName = OneSignalNotificationServiceExtension;
+			productReference = 22E1F1471EA515B900D723B5 /* OneSignalNotificationServiceExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -156,13 +266,26 @@
 		223B55E81E6A41AF00CC3A64 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0820;
+				LastSwiftUpdateCheck = 0830;
 				LastUpgradeCheck = 0820;
 				ORGANIZATIONNAME = HampHack_Tapojit;
 				TargetAttributes = {
 					223B55EF1E6A41AF00CC3A64 = {
 						CreatedOnToolsVersion = 8.2.1;
-						DevelopmentTeam = WM632VJLE6;
+						DevelopmentTeam = U9BVUZUH2U;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+							com.apple.Push = {
+								enabled = 1;
+							};
+						};
+					};
+					22E1F1461EA515B900D723B5 = {
+						CreatedOnToolsVersion = 8.3;
+						DevelopmentTeam = U9BVUZUH2U;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -181,6 +304,7 @@
 			projectRoot = "";
 			targets = (
 				223B55EF1E6A41AF00CC3A64 /* HampHack */,
+				22E1F1461EA515B900D723B5 /* OneSignalNotificationServiceExtension */,
 			);
 		};
 /* End PBXProject section */
@@ -190,15 +314,36 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				226CB9501E8F85BF008FF6E5 /* eyes.jpg in Resources */,
+				226CB9571E8F85BF008FF6E5 /* rocket.jpg in Resources */,
+				226CB9521E8F85BF008FF6E5 /* nerd.jpg in Resources */,
 				223B56181E6A82A900CC3A64 /* hh_logo_bckgrnd.jpg in Resources */,
+				226CB9421E8F65B6008FF6E5 /* cool.jpg in Resources */,
 				223B56141E6A806E00CC3A64 /* twitter.jpg in Resources */,
 				223B56161E6A808000CC3A64 /* youtube1.jpg in Resources */,
+				226CB9581E8F85BF008FF6E5 /* sleep.jpg in Resources */,
+				226CB9441E8F85AF008FF6E5 /* drink.jpg in Resources */,
+				226CB93E1E8F55FD008FF6E5 /* Instagram.jpg in Resources */,
+				226CB9511E8F85BF008FF6E5 /* headph.jpg in Resources */,
 				223B56121E6A804700CC3A64 /* googl.jpg in Resources */,
 				223B56101E6A800A00CC3A64 /* fb.jpg in Resources */,
+				226CB9541E8F85BF008FF6E5 /* owl.jpg in Resources */,
+				226CB9591E8F85BF008FF6E5 /* taco.jpg in Resources */,
 				223B56001E6A41AF00CC3A64 /* LaunchScreen.storyboard in Resources */,
+				226CB95A1E8F85BF008FF6E5 /* time.jpg in Resources */,
+				226CB9561E8F85BF008FF6E5 /* prize.jpg in Resources */,
 				223B56081E6A41F600CC3A64 /* GoogleService-Info.plist in Resources */,
+				226CB9551E8F85BF008FF6E5 /* pizza.jpg in Resources */,
 				223B55FD1E6A41AF00CC3A64 /* Assets.xcassets in Resources */,
+				226CB9531E8F85BF008FF6E5 /* noodles.jpg in Resources */,
 				223B55FB1E6A41AF00CC3A64 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		22E1F1451EA515B900D723B5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -269,7 +414,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		22E1F1431EA515B900D723B5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				22E1F14A1EA515B900D723B5 /* NotificationService.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		22E1F14D1EA515B900D723B5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 22E1F1461EA515B900D723B5 /* OneSignalNotificationServiceExtension */;
+			targetProxy = 22E1F14C1EA515B900D723B5 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		223B55F91E6A41AF00CC3A64 /* Main.storyboard */ = {
@@ -386,11 +547,13 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 987D981B5C0E0E22BDBC58FA /* Pods-HampHack.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = WM632VJLE6;
+				CODE_SIGN_ENTITLEMENTS = HampHack/HampHack.entitlements;
+				DEVELOPMENT_TEAM = U9BVUZUH2U;
 				INFOPLIST_FILE = HampHack/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.Tapojit.HampHack;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Nirman-Dave.HampHack";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -400,12 +563,44 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = F2F691B6AE337115A3FA9A4F /* Pods-HampHack.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = WM632VJLE6;
+				CODE_SIGN_ENTITLEMENTS = HampHack/HampHack.entitlements;
+				DEVELOPMENT_TEAM = U9BVUZUH2U;
 				INFOPLIST_FILE = HampHack/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.Tapojit.HampHack;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Nirman-Dave.HampHack";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		22E1F14F1EA515B900D723B5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				DEVELOPMENT_TEAM = U9BVUZUH2U;
+				INFOPLIST_FILE = OneSignalNotificationServiceExtension/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Nirman-Dave.HampHack.OneSignalNotificationServiceExtension";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		22E1F1501EA515B900D723B5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				DEVELOPMENT_TEAM = U9BVUZUH2U;
+				INFOPLIST_FILE = OneSignalNotificationServiceExtension/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Nirman-Dave.HampHack.OneSignalNotificationServiceExtension";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
@@ -427,6 +622,15 @@
 			buildConfigurations = (
 				223B56051E6A41AF00CC3A64 /* Debug */,
 				223B56061E6A41AF00CC3A64 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		22E1F1511EA515B900D723B5 /* Build configuration list for PBXNativeTarget "OneSignalNotificationServiceExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				22E1F14F1EA515B900D723B5 /* Debug */,
+				22E1F1501EA515B900D723B5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

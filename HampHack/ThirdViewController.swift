@@ -8,7 +8,8 @@
 
 import UIKit
 
-class ThirdViewController: UIViewController {
+class ThirdViewController: UIViewController, UIScrollViewDelegate {
+    
     
     
     private var _urlP=String()
@@ -36,7 +37,24 @@ class ThirdViewController: UIViewController {
         let hhURL=URL(string: val)
         let hh=URLRequest(url: hhURL!)
         web.loadRequest(hh)
+        web.scrollView.delegate=self
     }
+    
+    func scrollViewWillEndDragging(_ scrollView: UIScrollView, withVelocity velocity: CGPoint, targetContentOffset: UnsafeMutablePointer<CGPoint>) {
+        if (scrollView.contentOffset.y<0)
+        {
+            changeVC()
+        }
+    }
+    
+    func changeVC() -> Void {
+        let storyBoard : UIStoryboard = UIStoryboard(name: "Main", bundle:nil)
+        
+        let nextViewController = storyBoard.instantiateViewController(withIdentifier: "Tab")
+        self.present(nextViewController, animated:true, completion:nil)
+    }
+
+
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

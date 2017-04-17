@@ -22,6 +22,18 @@ class Scan: UIViewController, AVCaptureMetadataOutputObjectsDelegate {
     var videoPreviewLayer:AVCaptureVideoPreviewLayer?
     var qrCodeFrameView:UIView?
     
+    let ticketsL=["Registration",
+                  "Idea Jam (6:45pm)",
+                  "Pitch your product idea (7:15pm)",
+                  "Virtual Reality Games for beginners (7:15pm)",
+                  "Quick and dirty prototype 101 (7:15pm)",
+                  "Viacom workshop (7:45pm)",
+                  "Design Thinking (7:45pm)",
+                  "Introduction to 3D printing (7:45pm)",
+                  "Intro to Docker, app making (8:15pm)",
+                  "Introduction to 3D Scanning (8:15pm)",
+                  "Controlling things using mind waves (8:15pm)"]
+    
     let supportedCodeTypes = [AVMetadataObjectTypeUPCECode,
                               AVMetadataObjectTypeCode39Code,
                               AVMetadataObjectTypeCode39Mod43Code,
@@ -128,21 +140,46 @@ class Scan: UIViewController, AVCaptureMetadataOutputObjectsDelegate {
                 ref=FIRDatabase.database().reference()
                 let val=metadataObj.stringValue
                 
-                if val=="Ticket1"
+                if val==ticketsL[1]
                 {
-                    messageLabel.text = val!+" has been verified!"
+                    messageLabel.text = "Workshop ticket has been verified!"
                 }
-                else if val=="Ticket2"
+                else if val==ticketsL[2]
                 {
-                    messageLabel.text = val!+" has been verified!"
+                    messageLabel.text = "Workshop ticket has been verified!"
                 }
-                else if val=="Ticket3"
+                else if val==ticketsL[3]
                 {
-                    messageLabel.text = val!+" has been verified!"
+                    messageLabel.text = "Workshop ticket has been verified!"
                 }
-                else if val=="Ticket4"
+                else if val==ticketsL[4]
                 {
-                    messageLabel.text = val!+" has been verified!"
+                    messageLabel.text = "Workshop ticket has been verified!"
+                }
+                else if val==ticketsL[5]
+                {
+                    messageLabel.text = "Workshop ticket has been verified!"
+                }
+                else if val==ticketsL[6]
+                {
+                    messageLabel.text = "Workshop ticket has been verified!"
+                }
+                
+                else if val==ticketsL[7]
+                {
+                    messageLabel.text = "Workshop ticket has been verified!"
+                }
+                else if val==ticketsL[8]
+                {
+                    messageLabel.text = "Workshop ticket has been verified!"
+                }
+                else if val==ticketsL[9]
+                {
+                    messageLabel.text = "Workshop ticket has been verified!"
+                }
+                else if val==ticketsL[10]
+                {
+                    messageLabel.text = "Workshop ticket has been verified!"
                 }
                 else
                 {

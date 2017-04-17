@@ -8,11 +8,12 @@
 
 import UIKit
 import FirebaseAuth
-class Authentication: UIViewController {
+class Authentication: UIViewController, UITextFieldDelegate {
 
     @IBOutlet weak var signInLabel: UILabel!
     
     @IBOutlet weak var emailTextField: UITextField!
+    @IBOutlet weak var scrollView: UIScrollView!
     
     @IBOutlet weak var passwordTextField: UITextField!
     
@@ -66,8 +67,28 @@ class Authentication: UIViewController {
         self.present(alert, animated: true, completion: nil)
     }
     
-    @IBAction func unwindToHomeScreen(segue: UIStoryboardSegue) {
-        dismiss(animated: true, completion: nil)
+    @IBAction func unwindToAuthentication(segue: UIStoryboardSegue) {
+        
+    }
+    
+    func textFieldDidBeginEditing(_ textField: UITextField) {
+        if (textField==emailTextField)
+        {
+            scrollView.setContentOffset(CGPoint(x: 0, y: 100), animated: true)
+        }
+        else
+        {
+            scrollView.setContentOffset(CGPoint(x: 0, y: 150), animated: true)
+        }
+        
+    }
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        textField.resignFirstResponder()
+        return true
+    }
+    
+    func textFieldDidEndEditing(_ textField: UITextField) {
+        scrollView.setContentOffset(CGPoint(x: 0, y: 0), animated: true)
     }
 
     /*

@@ -32,12 +32,14 @@ PODS:
     - GoogleToolboxForMac/NSString+URLArguments (= 2.1.1)
   - GoogleToolboxForMac/NSString+URLArguments (2.1.1)
   - GTMSessionFetcher/Core (1.1.8)
+  - OneSignal (2.3.6)
   - QRCode (2.0)
 
 DEPENDENCIES:
   - Firebase/Auth
   - Firebase/Core
   - Firebase/Database
+  - OneSignal
   - QRCode
 
 SPEC CHECKSUMS:
@@ -49,8 +51,9 @@ SPEC CHECKSUMS:
   FirebaseInstanceID: 2d0518b1378fe9d685ef40cbdd63d2fdc1125339
   GoogleToolboxForMac: 8e329f1b599f2512c6b10676d45736bcc2cbbeb0
   GTMSessionFetcher: 6f8d8b28b7e345549ac471071608170b31cb4977
+  OneSignal: bbf2aaf982cb2c2d69dc636500271968f983d553
   QRCode: f98a1886c8f37523704a7512a4c0cd45b34c18a4
 
-PODFILE CHECKSUM: 8a8678a2cc51f42a99d6d99dc4958a580fd92a81
+PODFILE CHECKSUM: c9fd53e260f8abdaeefcf23fdab0a58e38bae5d3
 
 COCOAPODS: 1.2.0
