@@ -12,6 +12,7 @@ Contains social media news for event and will display important announcements du
 
 **QR code-**
 Creates and displays generated QR images for registration and workshops. Number of workshop tickets generated is kept track of in Firebase database. Such tickets can be verified using built-in scanner in **Scan** view controller. Swift file: SecondViewController.swift
+
 ![Alt text](http://a4.mzstatic.com/us/r30/Purple111/v4/39/bc/24/39bc2437-d452-e73f-322a-aa8516019d0e/screen696x696.jpeg "Optional title")
 ![Alt text](http://a1.mzstatic.com/us/r30/Purple111/v4/a6/b7/48/a6b748db-816b-77d3-2727-44b1f5912e37/screen696x696.jpeg "Optional title")
 
