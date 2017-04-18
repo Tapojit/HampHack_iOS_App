@@ -19,8 +19,12 @@ Creates and displays generated QR images for registration and workshops. Number 
 **Website-**
 An UIWebView intent to HampHack Website. Swift file: ThirdViewController.swift
 
+![Alt text](http://a3.mzstatic.com/us/r30/Purple122/v4/eb/e6/dd/ebe6dde8-c3d8-7a99-8e37-cfc8a529a32f/screen696x696.jpeg "Optional title")
+
 **Organizers-**
  **For organizers only**. Has email and password authentication exclusive only to event organizers. Swift file: Authentication.swift.
+ 
+![Alt text](http://a3.mzstatic.com/us/r30/Purple111/v4/d0/3c/39/d03c395f-5635-ca44-7748-e8b32365ec62/screen696x696.jpeg "Optional title")
 
 Successful authentication opens a new view controller. Here, organizers can post new announcements and feeds. Swift file: Organizers.swift.
 
