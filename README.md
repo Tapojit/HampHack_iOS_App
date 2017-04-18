@@ -32,7 +32,7 @@ Successful authentication opens a new view controller. Here, organizers can post
 
 Qrcode scanner is accessible from this view controller upon pressing camera button. Swift file: Scan.swift.
 
-![Alt text](https://scontent.fzty2-1.fna.fbcdn.net/v/t34.0-12/17238969_1240502942685520_911539801_n.png?oh=10a5869630cb9bca898eeeb9bc878748&oe=58F92134 "Optional title")
+![Alt text](https://scontent.fzty2-1.fna.fbcdn.net/v/t34.0-12/17321646_1240503132685501_1501133217_n.png?oh=24896f0cb871095c9272ecdcb5f430ff&oe=58F83499 "Optional title")
 
 # Other Features:
 **Notifications:**
