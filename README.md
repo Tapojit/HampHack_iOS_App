@@ -28,7 +28,7 @@ An UIWebView intent to HampHack Website. Swift file: ThirdViewController.swift
 
 Successful authentication opens a new view controller. Here, organizers can post new announcements and feeds. Swift file: Organizers.swift.
 
-![Alt text](https://scontent.fzty2-1.fna.fbcdn.net/v/t34.0-12/17238969_1240502942685520_911539801_n.png?oh=10a5869630cb9bca898eeeb9bc878748&oe=58F92134 "Optional title")
+![Alt text](https://scontent-iad3-1.xx.fbcdn.net/v/t34.0-12/17270130_1240502662685548_49794087_n.png?oh=582056f3a4852dec11672587809f61cd&oe=5900BFF9 "Optional title")
 
 Qrcode scanner is accessible from this view controller upon pressing camera button. Swift file: Scan.swift.
 
