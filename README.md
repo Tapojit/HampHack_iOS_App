@@ -1,5 +1,6 @@
 # HampHack_iOS_App
 This is an iOS app dedicated to the event HampHack, a yearly hackathon event in Hampshire College. Backend database and authentication (For event organizers only) was implemented using *Firebase*. This app is available in App Store. Link: https://itunes.apple.com/us/app/hamp-hack-2017/id1222384071?ls=1&mt=8
+
 **[UPDATE]: This app on the App Store is disabled as of June 2017.**
 
 # View Controllers
@@ -26,10 +27,9 @@ An *UIWebView intent* to HampHack Website. Swift file: ThirdViewController.swift
 
 Successful authentication opens a new *view controller*. Here, organizers can post new announcements and feeds. Swift file: Organizers.swift.
 
-<img src="https://raw.githubusercontent.com/Tapojit/HampHack_iOS_App/master/organize_iOS.png" alt="alt text" width="392" height="696">
-
 Qrcode scanner is accessible from this *view controller* upon pressing camera button. Swift file: Scan.swift.
 
+<img src="https://raw.githubusercontent.com/Tapojit/HampHack_iOS_App/master/organize_iOS.png" alt="alt text" width="392" height="696">
 <img src="https://raw.githubusercontent.com/Tapojit/HampHack_iOS_App/master/scan_ios.png" alt="alt text" width="392" height="696">
 
 # Other Features:
