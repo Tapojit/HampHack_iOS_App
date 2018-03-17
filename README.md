@@ -24,11 +24,11 @@ An UIWebView intent to HampHack Website. Swift file: ThirdViewController.swift
 **Organizers-**
  **For organizers only**. Has email and password authentication exclusive only to event organizers. Swift file: Authentication.swift.
  
-![Alt text](https://github.com/Tapojit/HampHack_iOS_App/blob/master/organize_iOS.png "Optional title")
+![Alt text](https://github.com/Tapojit/HampHack_iOS_App/blob/master/sign%20in_ios.png "Optional title")
 
 Successful authentication opens a new view controller. Here, organizers can post new announcements and feeds. Swift file: Organizers.swift.
 
-![Alt text](https://scontent-iad3-1.xx.fbcdn.net/v/t34.0-12/17238969_1240502942685520_911539801_n.png?oh=5df83ec6db0ea08f76980217db61f96b&oe=59010A34 "Optional title")
+![Alt text](https://github.com/Tapojit/HampHack_iOS_App/blob/master/organize_iOS.png "Optional title")
 
 Qrcode scanner is accessible from this view controller upon pressing camera button. Swift file: Scan.swift.
 
