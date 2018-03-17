@@ -24,7 +24,7 @@ An UIWebView intent to HampHack Website. Swift file: ThirdViewController.swift
 **Organizers-**
  **For organizers only**. Has email and password authentication exclusive only to event organizers. Swift file: Authentication.swift.
  
-![Alt text](http://a3.mzstatic.com/us/r30/Purple111/v4/d0/3c/39/d03c395f-5635-ca44-7748-e8b32365ec62/screen696x696.jpeg "Optional title")
+![Alt text](https://github.com/Tapojit/HampHack_iOS_App/blob/master/organize_iOS.png "Optional title")
 
 Successful authentication opens a new view controller. Here, organizers can post new announcements and feeds. Swift file: Organizers.swift.
 
