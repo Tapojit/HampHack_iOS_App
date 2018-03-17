@@ -1,5 +1,5 @@
 # HampHack_iOS_App
-This is an iOS app dedicated to the event HampHack, a yearly hackathon event in Hampshire College. Backend database and authentication (For event organizers only) is implemented in *Firebase*. App is available in App Store. Link: https://itunes.apple.com/us/app/hamp-hack-2017/id1222384071?ls=1&mt=8
+This is an iOS app dedicated to the event HampHack, a yearly hackathon event in Hampshire College. Backend database and authentication (For event organizers only) was implemented using *Firebase*. This app is available in App Store (currently has no support from developers). Link: https://itunes.apple.com/us/app/hamp-hack-2017/id1222384071?ls=1&mt=8
 
 # View Controllers
 **Feeds-**
