@@ -3,12 +3,9 @@ This is an iOS app dedicated to the event HampHack, a yearly hackathon event in 
 
 # View Controllers
 **Feeds-**
-Contains social media news for event and will display important announcements during the event. Feeds are clickable and will take user to social media posts in an *UIWebView*. Push notifications activated for both. There is a timer located in the top right corner, which counts down to the event's start. It will reset when the event starts and count down to the end. Swift file: FirstViewController.swift
+Contains social media news for event and will display important announcements during the event. Feeds are clickable and will take user to social media posts in an *UIWebView*. Push notifications activated for both. There is a timer located in the top right corner, which counts down to the event's start. It will reset when the event starts and count down to its end. Swift file: FirstViewController.swift
+
 ![Alt text](http://a5.mzstatic.com/us/r30/Purple122/v4/77/1a/a5/771aa5e1-edbd-ee83-b916-d63eefbc4b22/screen696x696.jpeg "Optional title")
-
-
-
-
 
 **QR code-**
 "QR tickets" for registration and workshops are generated and displayed here. *Firebase* database is used to keep track of limited number of workshop tickets made available and to cross-verify participants who registered through our website. These tickets can be verified using built-in scanner in **Scan** view controller. Swift file: SecondViewController.swift
